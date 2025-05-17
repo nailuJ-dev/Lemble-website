@@ -1,0 +1,72 @@
+# Fichiers de configuration contenant des clés API
+config.js
+
+# Dépendances
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dossiers de build et de production
+/dist/
+/build/
+/public/build/
+
+# Fichiers d'environnement
+.env
+.env.*
+!.env.example
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Dossiers et fichiers d'éditeurs de code
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Fichiers de log
+logs
+*.log
+npm-debug.log*
+
+# Fichiers temporaires et de cache
+.cache/
+.temp/
+.tmp/
+*.tmp
+*.bak
+
+# Fichiers de sauvegarde
+*~
+*.bak
+*.backup
+
+# Fichiers de déploiement
+.netlify
+.vercel
+.firebase/
+.firebaserc
+
+# Dossiers de test et couverture
+/coverage/
+/.nyc_output/
+/cypress/videos/
+/cypress/screenshots/
+
+# Fichiers d'upload et images générées
+/uploads/
+/media/
+
+# Fichiers spécifiques au projet (ajoutez les vôtres si nécessaire)
+# file-with-secrets.js
+# another-sensitive-file.json
