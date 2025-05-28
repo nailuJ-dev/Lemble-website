@@ -3,1434 +3,982 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expertise en gestion de patrimoine en Bretagne, Paris et à la Réunion. Services financiers personnalisés pour sécuriser et faire fructifier votre patrimoine.">
+    <meta name="keywords" content="gestion fortune, patrimoine, investissement, Bretagne, Paris, Réunion, conseiller financier, planification financière">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Lemble & Co | Gestion de Patrimoine sur Mesure">
+    <meta property="og:description" content="Solutions sur mesure pour la gestion et l'optimisation de votre patrimoine en Bretagne, Paris et à la Réunion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lemble-and-co.com">
+    <meta property="og:image" content="images/og-image.jpg">
+    
+    <title>Lemble & Co | Gestion de Patrimoine Sur Mesure</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <title>Wireframe - LEMBLÉ & Co</title>
-    <style>
-        :root {
-            --primary: #023047;
-            --secondary: #219ebc;
-            --accent: #d4af37;
-            --light: #f8f9fa;
-            --dark: #333;
-            --bg: #f0f2f5;
-            --border: #e1e4e8;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--bg);
-            padding: 20px;
-        }
-        
-        .wireframe-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        
-        header {
-            background: var(--primary);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-        
-        h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        
-        h2 {
-            font-size: 22px;
-            margin: 20px 0 15px;
-            color: var(--primary);
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 8px;
-        }
-        
-        h3 {
-            font-size: 18px;
-            margin: 15px 0 10px;
-            color: var(--primary);
-        }
-        
-        p {
-            margin-bottom: 15px;
-        }
-        
-        .content {
-            padding: 30px;
-        }
-        
-        .section {
-            margin-bottom: 40px;
-            position: relative;
-        }
-        
-        .wireframe {
-            background: white;
-            border: 2px solid var(--border);
-            border-radius: 5px;
-            padding: 20px;
-            margin: 20px 0;
-            position: relative;
-        }
-        
-        .wireframe::before {
-            content: "Wireframe";
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            background: white;
-            padding: 0 10px;
-            font-size: 12px;
-            color: var(--dark);
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        
-        .element {
-            background: #eee;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 4px;
-        }
-        
-        .element.highlighted {
-            border: 2px solid var(--accent);
-            background: rgba(212, 175, 55, 0.1);
-        }
-        
-        .header-wireframe {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background: #f8f9fa;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .logo {
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            font-family: "Parisienne", cursive;
-            font-style: normal;
-            font-size: 2em;
-            color: var(--primary);
-        }
-
-        .logo-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 35px;
-            height: 35px;
-            background-color: var(--primary);
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        
-        .logo-dot {
-            width: 10px;
-            height: 10px;
-            background: var(--accent);
-            border-radius: 50%;
-        }
-        
-        .menu {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .menu-item {
-            padding: 5px;
-        }
-        
-        .menu-item.active {
-            border-bottom: 2px solid var(--accent);
-        }
-        
-        .hero-wireframe {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            min-height: 300px;
-        }
-        
-        .hero-content {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .hero-visual {
-            
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            border-radius: 5px;
-        }
-        
-        .shape {
-            position: absolute;
-            background: rgba(33, 158, 188, 0.2);
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            width: 60%;
-            height: 60%;
-        }
-        
-        .shape-1 {
-            top: -10%;
-            right: -10%;
-        }
-        
-        .shape-2 {
-            bottom: -10%;
-            left: -10%;
-            background: rgba(212, 175, 55, 0.2);
-        }
-        
-        .hero-image {
-            width: 90%;
-            height: 80%;
-            border-radius: 5px;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .stats {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            display: flex;
-            gap: 10px;
-            z-index: 2;
-        }
-        
-        .stat {
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            text-align: center;
-            font-size: 12px;
-        }
-        
-        .buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        
-        .btn {
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-        }
-        
-        .btn-outline {
-            border: 2px solid var(--primary);
-            color: var(--primary);
-        }
-        
-        .services-wireframe {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            padding: 20px;
-        }
-        
-        .service-card {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            text-align: center;
-            min-height: 180px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .service-icon {
-            width: 40px;
-            height: 40px;
-            background: #eee;
-            border-radius: 50%;
-            margin: 0 auto 10px;
-        }
-        
-        .service-card::after {
-            content: "↻";
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            font-size: 16px;
-            color: var(--accent);
-        }
-        
-        .about-wireframe {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 20px;
-            padding: 20px;
-        }
-        
-        .about-image {
-            background: #eee;
-            border-radius: 5px;
-            height: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        
-        .about-content {
-            padding: 10px;
-        }
-        
-        .certifications {
-            display: flex;
-            gap: 10px;
-            margin: 10px 0;
-        }
-        
-        .certification {
-            background: #f0f2f5;
-            border-radius: 5px;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            font-size: 12px;
-        }
-        
-        .certification-icon {
-            width: 20px;
-            height: 20px;
-            background: #ddd;
-            border-radius: 50%;
-            margin-right: 5px;
-        }
-        
-        .philosophy {
-            margin-top: 20px;
-            border-top: 1px solid #ddd;
-            padding-top: 10px;
-        }
-        
-        .philosophy-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 10px;
-        }
-        
-        .philosophy-item {
-            background: #f8f9fa;
-            border-radius: 5px;
-            padding: 10px;
-            position: relative;
-        }
-        
-        .philosophy-number {
-            position: absolute;
-            top: -5px;
-            right: 5px;
-            font-size: 24px;
-            color: rgba(33, 158, 188, 0.2);
-            font-weight: bold;
-        }
-        
-        .map-section {
-            margin-top: 30px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-        }
-        
-        .locations-map {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        
-        .map {
-            background: #f0f2f5;
-            height: 200px;
-            border-radius: 5px;
-            position: relative;
-        }
-        
-        .map-point {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--accent);
-        }
-        
-        .point-paris {
-            top: 40%;
-            left: 60%;
-        }
-        
-        .point-bretagne {
-            top: 35%;
-            left: 20%;
-        }
-        
-        .point-reunion {
-            bottom: 20%;
-            right: 10%;
-        }
-        
-        .testimonials {
-            margin-top: 30px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-        }
-        
-        .testimonial-slider {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            position: relative;
-        }
-        
-        .testimonial-controls {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        
-        .testimonial-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #ddd;
-        }
-        
-        .testimonial-dot.active {
-            background: var(--accent);
-        }
-        
-        .faq-wireframe {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 20px;
-            padding: 20px;
-        }
-        
-        .faq-image {
-            background: #eee;
-            border-radius: 5px;
-            height: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .faq-items {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .faq-item {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        
-        .faq-question {
-            padding: 10px;
-            background: #f8f9fa;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-answer {
-            padding: 10px;
-            border-top: 1px solid #ddd;
-            background: white;
-        }
-        
-        .more-questions {
-            text-align: center;
-            margin-top: 10px;
-            font-weight: bold;
-            color: var(--primary);
-        }
-        
-        .pricing-wireframe {
-            padding: 20px;
-        }
-        
-        .calculator {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 30px;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 20px;
-        }
-        
-        .calculator-form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        
-        .form-group {
-            margin-bottom: 10px;
-        }
-        
-        .form-label {
-            font-size: 12px;
-            margin-bottom: 5px;
-            display: block;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background: #f8f9fa;
-        }
-        
-        .calculator-result {
-            background: #f8f9fa;
-            border-radius: 5px;
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .chart {
-            flex: 1;
-            background: white;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .result-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-        
-        .result-card {
-            background: white;
-            border-radius: 5px;
-            padding: 10px;
-            text-align: center;
-            font-size: 12px;
-        }
-        
-        .pricing-plans {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        
-        .pricing-card {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .pricing-card.recommended {
-            border: 2px solid var(--accent);
-            transform: translateY(-10px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .pricing-tag {
-            position: absolute;
-            top: 10px;
-            right: -30px;
-            background: var(--accent);
-            color: white;
-            padding: 5px 30px;
-            transform: rotate(45deg);
-            font-size: 12px;
-            font-weight: bold;
-        }
-        
-        .pricing-header {
-            padding: 15px;
-            background: #f8f9fa;
-            border-bottom: 1px solid #ddd;
-            text-align: center;
-        }
-        
-        .pricing-features {
-            padding: 15px;
-        }
-        
-        .pricing-feature {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-            font-size: 12px;
-        }
-        
-        .feature-check {
-            margin-right: 5px;
-            color: green;
-        }
-        
-        .pricing-button {
-            padding: 10px;
-            text-align: center;
-        }
-        
-        .contact-wireframe {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 20px;
-            padding: 20px;
-        }
-        
-        .contact-info {
-            background: var(--primary);
-            color: white;
-            border-radius: 5px;
-            padding: 20px;
-        }
-        
-        .contact-item {
-            display: flex;
-            margin-bottom: 15px;
-            align-items: center;
-        }
-        
-        .contact-icon {
-            width: 30px;
-            height: 30px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-        }
-        
-        .contact-form {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-        }
-        
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-        
-        footer {
-            background: var(--primary);
-            color: white;
-            padding: 20px;
-            margin-top: 40px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 20px;
-        }
-        
-        .footer-column {
-            padding: 10px;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 15px;
-            margin-top: 20px;
-            font-size: 12px;
-        }
-        
-        .feature-list {
-            margin: 20px 0;
-        }
-        
-        .feature {
-            background: rgba(2, 48, 71, 0.05);
-            border-left: 3px solid var(--primary);
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 0 5px 5px 0;
-        }
-        
-        .annotation {
-            background: #fffde7;
-            border-left: 3px solid var(--accent);
-            padding: 10px;
-            margin: 15px 0;
-            border-radius: 0 5px 5px 0;
-            font-size: 14px;
-        }
-        
-        .annotation-title {
-            font-weight: bold;
-            color: var(--primary);
-            margin-bottom: 5px;
-            font-size: 16px;
-        }
-
-        .timeline-item {
-            background: #f8f9fa;
-            border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        
-        @media (max-width: 768px) {
-            .hero-wireframe, 
-            .services-wireframe, 
-            .about-wireframe, 
-            .locations-map, 
-            .faq-wireframe, 
-            .calculator, 
-            .pricing-plans, 
-            .contact-wireframe,
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .services-wireframe {
-                grid-template-columns: 1fr 1fr;
-            }
-            
-            .philosophy-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- EmailJS Integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <!-- Leaflet Integration -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <!-- Configuration -->
+    <script src="config.js" defer></script>
 </head>
 <body>
-    <div class="wireframe-container">
-        <header>
-            <h1>LEMBLÉ & Co - Wireframe</h1>
-            <p>Proposition de site one-page premium pour la gestion de fortune et de patrimoine</p>
-        </header>
-        
-        <div class="content">
-            <p>Ce wireframe présente la structure et les fonctionnalités principales du site proposé pour LEMBLÉ & Co, spécialisé dans la gestion de fortune et de patrimoine en France Métropolitaine, Bretagne et à La Réunion.</p>
-            
-            <div class="section">
-                <h2>Structure globale</h2>
-                <p>Le site suivra une architecture one-page avec les sections suivantes:</p>
-                <ul>
-                    <li>Header & Navigation</li>
-                    <li>Hero Section</li>
-                    <li>Services</li>
-                    <li>À propos (Profil, Philosophie, Implantations, Témoignages)</li>
-                    <li>FAQ</li>
-                    <li>Tarifs (Calculatrice (optionnel car cela demande un peu plus de temps), Formules tarifaires)</li>
-                    <li>Contact</li>
-                    <li>Footer</li>
-                </ul>
-            </div>
-            
-            <div class="section">
-                <h2>Header & Navigation</h2>
-                <div class="wireframe">
-                    <div class="header-wireframe">
-                        <div class="logo">
-                            <span class="logo-icon">
-                                <span class="logo-dot"></span>
-                            </span>
-                            Lemblé & Co
-                        </div>
-                        <div class="menu">
-                            <div class="menu-item active">Accueil</div>
-                            <div class="menu-item">Services</div>
-                            <div class="menu-item">À propos</div>
-                            <div class="menu-item">FAQ</div>
-                            <div class="menu-item">Tarifs</div>
-                            <div class="menu-item">Contact</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="annotation">
-                    <div class="annotation-title">Notes sur le Header</div>
-                    <p>Le header reste fixe pendant le défilement avec un effet d'ombre sur la bordure inférieure, le fond sera blanc (ici légèrement grisé pour voir la taille). Le logo inclut un point doré symbolisant la précision et l'expertise, dans un cercle bleu pour rappeler le pompon du bachi des marins. Sur mobile, le menu se transforme en bouton hamburger avec un menu déroulant.</p>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Hero Section</h2>
-                <div class="wireframe">
-                    <div class="hero-wireframe">
-                        <div class="hero-content">
-                            <h3>Votre Patrimoine, <span style="color:var(--accent)">Mon Expertise</span></h3>
-                            <p>Solutions patrimoniales sur mesure pour particuliers et chefs d'entreprise en France métropolitaine et dans les DOM-TOM.</p>
-                            <div class="buttons">
-                                <div class="btn btn-primary">Découvrir mes services</div>
-                                <div class="btn btn-outline">Prendre rendez-vous</div>
-                            </div>
-                            <div style="margin-top:15px;">
-                                <small>France Métropolitaine • Bretagne • La Réunion</small>
-                            </div>
-                        </div>
-                        <div class="hero-visual">
-                            <div class="shape shape-1"></div>
-                            <div class="shape shape-2"></div>
-                            <div class="hero-image">
-                                <img src="./images/hero-image.jpg" alt="Visuel de la section héro" style="width:100%;border-radius:5px;">
-                            </div>
-                            <div class="stats">
-                                <div class="stat">
-                                    <strong>500+</strong><br>
-                                    Clients satisfaits
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="annotation">
-                    <div class="annotation-title">Éléments distinctifs</div>
-                    <p>Composition asymétrique moderne avec texte à gauche et visuel à droite. Les formes organiques en arrière-plan rappellent l'océan et seront animées avec un mouvement de vague. La statistique flottante crée une impression de solidité et d'expérience. L'indicateur de défilement animé (non visible sur le wireframe et constitué de trois chevrons animés) invite à explorer le contenu.</p>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Section Services</h2>
-                <div class="wireframe">
-                    <h3 style="text-align:center">Mes Services</h3>
-                    <div class="services-wireframe">
-                        <div class="service-card highlighted">
-                            <div class="service-icon"></div>
-                            <strong>Gestion de Portefeuille et de Placements</strong>
-                            <p style="font-size:12px;">Optimisation des placements selon votre profil de risque</p>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon"></div>
-                            <strong>Optimisation Fiscale</strong>
-                            <p style="font-size:12px;">Stratégies d'optimisation fiscale légales et éthiques pour réduire votre charge fiscale et maximiser vos revenus</p>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon"></div>
-                            <strong>Gestion de Patrimoine</strong>
-                            <p style="font-size:12px;">Une approche globale et humaine pour structurer, développer et transmettre votre patrimoine dans les meilleures conditions.</p>
-                        </div>
-                        <div class="service-card">
-                            <div class="service-icon"></div>
-                            <strong>Conseil en Investissement</strong>
-                            <p style="font-size:12px;">Analyse et recommandations d'opportunités d'investissement pour accroître votre capital financier</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="annotation">
-                    <div class="annotation-title">Cartes interactives</div>
-                    <p>Les cartes de service utiliseront un effet de rotation 3D au survol: le recto présente un aperçu, tandis que le verso détaille les avantages spécifiques et inclut un CTA. Cette interaction renforce l'engagement de l'utilisateur et permet de présenter davantage d'informations sans surcharger l'interface. Les petites flèches sur le wireframe symbolise cet effet et ne seront pas présentes.
-                    </br>La carte de service "Gestion de Portefeuille et de Placements" est optionnel et pourrait être fusionné sous l'étiquette "Gestion et Conseil en investissement" pour être remplacé par une carte "Patrimoine du dirigeant et des entreprises" ou quelque chose comme ça. Le design des cartes est épuré et moderne, avec des couleurs douces et un contraste suffisant pour une bonne lisibilité.</p>
-                    </p>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Section À propos</h2>
-                <div class="wireframe">
-                    <h3 style="text-align:center">À Propos</h3>
-                    <div class="about-wireframe">
-                        <div class="about-image">Photo professionnelle</div>
-                        <div class="about-content">
-                            <h3>Gwenaëlle Lemblé</h3>
-                            <p style="font-style:italic;color:var(--secondary);">Experte en Gestion Patrimoniale et Financière - Présidente Fondatrice</p>
-                            <p>Après 13 ans d'expérience dans les métiers de l'expertise comptable en France Métropolitaine et à la Réunion, j'ai décidé de me spécialiser en gestion patrimoniale pour offrir un accompagnement complet et personnalisé à mes clients...</p>
-                            
-                            <div class="certifications">
-                                <div class="certification">
-                                    <div class="certification-icon"></div>
-                                    CIF
-                                </div>
-                                <div class="certification">
-                                    <div class="certification-icon"></div>
-                                    AMF
-                                </div>
-                                <div class="certification">
-                                    <div class="certification-icon"></div>
-                                    CGPC
-                                </div>
-                            </div>
-                            
-                            <div class="philosophy">
-                                <h4>Ma philosophie</h4>
-                                <div class="philosophy-grid">
-                                    <div class="philosophy-item">
-                                        <div class="philosophy-number">01</div>
-                                        <strong>Transparence</strong>
-                                        <p style="font-size:12px;">Une communication claire et honnête</p>
-                                    </div>
-                                    <div class="philosophy-item">
-                                        <div class="philosophy-number">02</div>
-                                        <strong>Sur-mesure</strong>
-                                        <p style="font-size:12px;">Des stratégies adaptées à vos objectifs</p>
-                                    </div>
-                                    <div class="philosophy-item">
-                                        <div class="philosophy-number">03</div>
-                                        <strong>Orienté client</strong>
-                                        <p style="font-size:12px;">Un service irréprochable et performant pour mes clients</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="map-section">
-                        <h3 style="text-align:center">Localisation</h3>
-                        <div class="locations-map">
-                            <div class="map">
-                                <div class="map-point point-paris"></div>
-                                <div class="map-point point-bretagne"></div>
-                                <div class="map-point point-reunion"></div>
-                            </div>
-                            <div class="location-details">
-                                <h4>Où nous rencontrer ?</h4>
-                                <p>Mes bureaux sont situés à des emplacements stratégiques pour servir ma clientèle en France métropolitaine et dans les DOM-TOM. Vous accompagnez au plus près est ma priorité.</p>
-                                <ul style="list-style:none;">
-                                    <li>Paris - 13 rue du Faubourg Saint-Honoré</li>
-                                    <li>Brest - 2 rue Albert Rolland</li>
-                                    <li>Saint-Denis - 24 rue Juliette Dodu</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonials">
-                        <h3 style="text-align:center">Témoignages</h3>
-                        <div class="testimonial-slider">
-                            <p>" L'approche personnalisée de Gwen m'a permis de restructurer mon patrimoine et d'optimiser ma fiscalité. Je recommande vivement ses services. "</p>
-                            <div style="display:flex;align-items:center;">
-                                <div style="width:40px;height:40px;background:#ddd;border-radius:50%;margin-right:10px;"></div>
-                                <div>
-                                    <strong>Jean-Michel Dupont</strong><br>
-                                    <small>Chef d'entreprise, Paris</small>
-                                </div>
-                            </div>
-                            <div class="testimonial-controls">
-                                <div>←</div>
-                                <div class="testimonial-dot active"></div>
-                                <div class="testimonial-dot"></div>
-                                <div class="testimonial-dot"></div>
-                                <div>→</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="annotation">
-                    <div class="annotation-title">Section multi-composants</div>
-                    <p>La section À propos est composée de plusieurs éléments complémentaires qui établissent la crédibilité: présentation personnelle, certifications, philosophie d'investissement, implantations géographiques et témoignages clients. Dans l'idéal, la carte de France sera stylisée avec les points d'implantation et interactive. Elle permettra à l'utilisateur de voir les détails de chaque bureau au survol.
-                    </br>Les témoignages clients seront présentés sous forme de carrousel avec des photos et des citations. Le design sera épuré, avec une typographie claire et des couleurs douces pour une bonne lisibilité. Les témoignages seront mis en avant avec un effet de survol pour attirer l'attention.
-                     </br>Une partie de cette section pourrait contenir une chronologie de carrière, avec des jalons clés et des réalisations marquantes (à déterminer et valider)</p>
-                    </p>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Section FAQ</h2>
-                <div class="wireframe">
-                    <h3 style="text-align:center">Questions Fréquentes</h3>
-                    <div class="faq-wireframe">
-                        <div class="faq-image">Image FAQ</div>
-                        <div class="faq-items">
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    Comment se déroule le premier rendez-vous ?
-                                    <span>+</span>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    Quel est le montant minimum d'investissement ?
-                                    <span>+</span>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    Comment sont rémunérés vos services ?
-                                    <span>+</span>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Ma rémunération peut prendre différentes formes selon vos besoins : honoraires fixes, pourcentage des actifs gérés ou commissions sur les produits souscrits. La transparence est ma priorité, et tous les frais sont clairement détaillés avant tout engagement.</p>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    Quels types d'investissements proposez-vous ?
-                                    <span>+</span>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    Comment assurez-vous la sécurité de mes investissements ?
-                                    <span>+</span>
-                                </div>
-                            </div>
-                            <div class="more-questions">
-                                Voir plus de questions →
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="annotation">
-                    <div class="annotation-title">FAQ dynamique</div>
-                    <p>L'accordéon de FAQ permet d'afficher beaucoup d'informations sans encombrer la page. Le bouton "Voir plus" affiche des questions supplémentaires, notamment des questions techniques qui démontrent l'expertise. Cette fonctionnalité permet de ne pas submerger l'utilisateur tout en offrant des réponses complètes aux visiteurs intéressés. L'image pour cette FAQ est optionnel car j'ai peur qu'elle alourdisse grandement le rendu sur mobile mais aussi sur desktop.
-                        De ce fait, la FAQ prendrait toute la largeur de l'écran sur mobile et serait plus agréable à lire y compris sur ordinateur (desktop). Le design sera épuré, avec des couleurs douces et un contraste suffisant pour une bonne lisibilité. Les questions seront mises en avant avec un effet de survol pour attirer l'attention.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Section Tarifs</h2>
-                <div class="wireframe">
-                    <h3 style="text-align:center">Mes Formules</h3>
-                    
-                    <div class="calculator">
-                        <div class="calculator-form">
-                            <h4>Calculatrice d'investissement</h4>
-                            <div class="form-group" style="grid-column:1/3;">
-                                <label class="form-label">Investissement initial (€)</label>
-                                <input type="text" class="form-control" value="50000">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Versement annuel (€)</label>
-                                <input type="text" class="form-control" value="5000">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Durée (années)</label>
-                                <input type="text" class="form-control" value="10">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Rendement annuel (%)</label>
-                                <input type="text" class="form-control" value="5">
-                            </div>
-                            <div class="form-group" style="grid-column:1/3;">
-                                <button class="btn btn-primary" style="width:100%;">Calculer</button>
-                            </div>
-                        </div>
-                        <div class="calculator-result">
-                            <div class="chart">
-                                Visualisation graphique des résultats
-                            </div>
-                            <div class="result-cards">
-                                <div class="result-card">
-                                    <strong>Capital final</strong>
-                                    <div style="font-size:18px;font-weight:bold;margin-top:5px;">132 068 €</div>
-                                </div>
-                                <div class="result-card">
-                                    <strong>Intérêts générés</strong>
-                                    <div style="font-size:18px;font-weight:bold;margin-top:5px;">32 068 €</div>
-                                </div>
-                                <div class="result-card">
-                                    <strong>Total versé</strong>
-                                    <div style="font-size:18px;font-weight:bold;margin-top:5px;">100 000 €</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="pricing-plans">
-                        <div class="pricing-card">
-                            <div class="pricing-header">
-                                <h4>Essentiel</h4>
-                                <p style="font-size:12px;">Pour commencer votre optimisation patrimoniale</p>
-                                <div style="margin-top:10px;">
-                                    <div style="font-size:12px;">À partir de</div>
-                                    <div style="font-size:24px;font-weight:bold;">0,8%</div>
-                                    <div style="font-size:12px;">des actifs gérés</div>
-                                </div>
-                            </div>
-                            <div class="pricing-features">
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Bilan patrimonial complet
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Stratégie d'investissement
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Suivi annuel
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Accès plateforme
-                                </div>
-                                <div class="pricing-feature" style="color:#999;">
-                                    <span style="color:red;">×</span> Optimisation fiscale
-                                </div>
-                                <div class="pricing-feature" style="color:#999;">
-                                    <span style="color:red;">×</span> Planification successorale
-                                </div>
-                            </div>
-                            <div class="pricing-button">
-                                <div class="btn btn-outline">Nous contacter</div>
-                            </div>
-                        </div>
-                        <div class="pricing-card recommended">
-                            <div class="pricing-tag">Recommandé</div>
-                            <div class="pricing-header">
-                                <h4>Premium</h4>
-                                <p style="font-size:12px;">Pour une stratégie patrimoniale optimisée</p>
-                                <div style="margin-top:10px;">
-                                    <div style="font-size:12px;">À partir de</div>
-                                    <div style="font-size:24px;font-weight:bold;">1,2%</div>
-                                    <div style="font-size:12px;">des actifs gérés</div>
-                                </div>
-                            </div>
-                            <div class="pricing-features">
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Bilan patrimonial complet
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Stratégie d'investissement
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Suivi trimestriel
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Accès plateforme
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Optimisation fiscale
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Planification successorale
-                                </div>
-                            </div>
-                            <div class="pricing-button">
-                                <div class="btn btn-primary">Nous contacter</div>
-                            </div>
-                        </div>
-                        <div class="pricing-card">
-                            <div class="pricing-header">
-                                <h4>Excellence</h4>
-                                <p style="font-size:12px;">Pour un accompagnement complet</p>
-                                <div style="margin-top:10px;">
-                                    <div style="font-size:12px;">À partir de</div>
-                                    <div style="font-size:24px;font-weight:bold;">1,5%</div>
-                                    <div style="font-size:12px;">des actifs gérés</div>
-                                </div>
-                            </div>
-                            <div class="pricing-features">
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Bilan patrimonial complet
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Stratégie sur mesure
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Suivi mensuel
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Accès prioritaire
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Optimisation fiscale
-                                </div>
-                                <div class="pricing-feature">
-                                    <span class="feature-check">✓</span> Planification succession
-                                </div>
-                            </div>
-                            <div class="pricing-button">
-                                <div class="btn btn-outline">Nous contacter</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="annotation">
-                    <div class="annotation-title">Calculatrice interactive et plans tarifaires</div>
-                    <p>La calculatrice d'investissement interactive permet aux visiteurs de visualiser le potentiel de croissance de leur capital. Elle constitue un outil d'engagement qui aide à concrétiser les bénéfices des services proposés. Cependant, il faut voir si nous l'intègrons car cela représente une plus grande charge de travail pour la concevoir et l'intégrer de manière fiable. 
-                    </br>Les plans tarifaires sont présentés de façon claire avec une mise en évidence visuelle du plan recommandé pour guider le choix du client. Les tarifs sont à titre d'exemple et seront à me transmettre pour les y inclure. Des incitations au contact avec la phrase "première consultation offerte" seront également placées. Offerte plutôt que gratuite pour marquer le côté exception et privilège au client.</p>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Section Contact</h2>
-                <div class="wireframe">
-                    <h3 style="text-align:center">Contact</h3>
-                    <div class="contact-wireframe">
-                        <div class="contact-info">
-                            <h4 style="color:white;">Coordonnées</h4>
-                            <div class="contact-item">
-                                <div class="contact-icon">T</div>
-                                <div>
-                                    <strong>Téléphone (optionnel)</strong><br>
-                                    +33 (0)2 98 XXX XXX
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">@</div>
-                                <div>
-                                    <strong>Email (exemple)</strong><br>
-                                    contact@lemble-co.com 
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">P</div>
-                                <div>
-                                    <strong>Bureaux</strong><br>
-                                    Brest, Paris, Saint-Denis
-                                </div>
-                            </div>
-                            <div style="margin-top:20px;">
-                                <strong>Horaires</strong>
-                                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
-                                    <div>Lun - Ven</div>
-                                    <div>9h00 - 18h00</div>
-                                    <div>Samedi</div>
-                                    <div>Sur rendez-vous uniquement</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-form">
-                            <h4>Envoyez-moi un message</h4>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="form-label">Nom complet*</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Email*</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="form-label">Téléphone*</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Sujet</label>
-                                    <select class="form-control">
-                                        <option>Demande générale</option>
-                                        <option>Conseil en investissement</option>
-                                        <option>Optimisation fiscale</option>
-                                        <option>Planification successorale</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Message</label>
-                                <textarea class="form-control" style="height:100px;"></textarea>
-                            </div>
-                            <div style="margin-top:15px;">
-                                <label style="display:flex;align-items:flex-start;gap:10px;font-size:12px;">
-                                    <input type="checkbox" style="margin-top:3px;">
-                                    J'accepte que mes données soient traitées conformément à la politique de confidentialité*
-                                </label>
-                            </div>
-                            <div style="margin-top:15px;">
-                                <button class="btn btn-primary" style="width:100%;">Envoyer votre message</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="annotation">
-                    <div class="annotation-title">Formulaire de contact avec EmailJS</div>
-                    <p>Le formulaire de contact est intégré avec EmailJS pour un envoi direct sans nécessiter de backend. Les clés API sont stockées dans un fichier de configuration séparé pour la sécurité. Le formulaire inclut une validation en temps réel et une protection anti-spam par honeypot ou Cloudflare. La carte de coordonnées sur fond bleu profond avec icônes dorées renforce l'identité visuelle premium du site.</p>
-                </div>
-                
-                <h3>Sécurité et configuration</h3>
-                <p>L'intégration EmailJS est configurée avec 3 éléments distincts:</p>
-                <ol>
-                    <li><strong>config.js</strong> - Fichier contenant les clés API réelles, exclu du contrôle de version pour la mise en production et ce fichier sera configuré pour être non-indexé par les moteurs de recherches</li>
-                    <li><strong>config-example.js</strong> - Modèle de fichier de configuration sans clés sensibles pour les tests en local. Il sera supprimé par la suite.</li>
-                    <li><strong>Intégration JavaScript</strong> - Code principal qui utilise les variables du fichier config.js</li>
-                </ol>
-            </div>
-            
-            <div class="section">
-                <h2>Footer</h2>
-                <div class="wireframe">
-                    <footer>
-                        <div class="footer-content">
-                            <div class="footer-column">
-                                <h4 style="color:white;">LEMBLÉ & Co</h4>
-                                <p style="font-size:12px;opacity:0.8;">Solutions personnalisées de gestion de fortune et de patrimoine pour sécuriser votre avenir financier et celui de vos proches.</p>
-                                <div style="display:flex;gap:10px;margin-top:15px;">
-                                    <div style="width:30px;height:30px;background:rgba(255,255,255,0.1);border-radius:50%;"></div>
-                                    <div style="width:30px;height:30px;background:rgba(255,255,255,0.1);border-radius:50%;"></div>
-                                    <div style="width:30px;height:30px;background:rgba(255,255,255,0.1);border-radius:50%;"></div>
-                                </div>
-                            </div>
-                            <div class="footer-column">
-                                <h4 style="color:white;">Navigation</h4>
-                                <ul style="list-style:none;padding:0;margin:0;font-size:12px;opacity:0.8;">
-                                    <li style="margin-bottom:5px;">Accueil</li>
-                                    <li style="margin-bottom:5px;">FAQ</li>
-                                    <li style="margin-bottom:5px;">Tarifs</li>
-                                    <li style="margin-bottom:5px;">Contact</li>
-                                </ul>
-                            </div>
-                            <div class="footer-column">
-                                <h4 style="color:white;">Services</h4>
-                                <ul style="list-style:none;padding:0;margin:0;font-size:12px;opacity:0.8;">
-                                    <li style="margin-bottom:5px;">Gestion de Portefeuille et de Placements</li>
-                                    <li style="margin-bottom:5px;">Planification Fiscale</li>
-                                    <li style="margin-bottom:5px;">Gestion de Patrimoine</li>
-                                    <li style="margin-bottom:5px;">Conseil en Investissement</li>
-                                </ul>
-                            </div>
-                            <div class="footer-column">
-                                <h4 style="color:white;">Légal</h4>
-                                <ul style="list-style:none;padding:0;margin:0;font-size:12px;opacity:0.8;">
-                                    <li style="margin-bottom:5px;">Politique de Confidentialité</li>
-                                    <li style="margin-bottom:5px;">Mentions Légales</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footer-bottom">
-                            <p>&copy; 2025 LEMBLÉ & Co. Tous droits réservés.</p>
-                            <p style="font-size:10px;opacity:0.7;">SASU au capital de X XXX€ - RCS PARIS I 123 456 789 - ORIAS n°12345678</p>
-                            <p style="font-size:10px;opacity:0.7;">Site web designé et développé par <a href="http://www.julian-buzare.com" style="text-decoration:underline;color:white;">julian-buzare.com</a></p>
-                        </div>
-                    </footer>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Fonctionnalités distinctives</h2>
-                <div class="feature-list">
-                    <div class="feature">
-                        <strong>Design premium inspiré des standards Awwwards</strong>
-                        <p>Utilisation de compositions asymétriques, d'animations subtiles, de micro-interactions et d'effets de parallaxe pour créer une expérience premium et mémorable.</p>
-                    </div>
-                    <div class="feature">
-                        <strong>Interaction enrichie</strong>
-                        <p>Cartes de services pivotantes, (calculatrice interactive), carte géographique cliquable et accordéon de FAQ pour maximiser l'engagement de l'utilisateur.</p>
-                    </div>
-                    <div class="feature">
-                        <strong>Thématique océan cohérente</strong>
-                        <p>Le thème océanique (vagues, bleus, formes organiques) symbolise à la fois la liberté et la sérénité - valeurs importantes pour la gestion de patrimoine.</p>
-                    </div>
-                    <div class="feature">
-                        <strong>Site responsive et accessible</strong>
-                        <p>Conception mobile-first, navigation simplifiée sur petits écrans, et respect des normes d'accessibilité WCAG AA pour une expérience inclusive.</p>
-                    </div>
-                    <div class="feature">
-                        <strong>Optimisation pour la conversion</strong>
-                        <p>Multiples points de contact (CTA stratégiquement placés, bouton flottant, formulaire optimisé) pour maximiser les prises de contact.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Conclusion</h2>
-                <p>Ce wireframe présente une proposition de site one-page premium pour LEMBLÉ & Co qui combine :</p>
-                <ul>
-                    <li>Un design élégant inspiré des tendances premium actuelles</li>
-                    <li>Une structure claire qui guide l'utilisateur vers la conversion</li>
-                    <li>Des fonctionnalités interactives qui renforcent l'engagement</li>
-                    <li>Une thématique océanique cohérente avec le positionnement</li>
-                    <li>Une intégration technique solide (EmailJS, Leafjet, optimisations, sécurité)</li>
-                    <li>Une optimisation du contenu et du SEO technique pour un bon référencement dès le lancement de la page</li>
-                    <li>Un site optimisé pour les navigateurs suivants : Chrome, Brave, Mozilla Firefox, Safari</li>
-                </ul>
-                <p>Cette solution permet de présenter efficacement les services de gestion de fortune et patrimoniale tout en renforçant l'image premium et l'expertise de la marque.</p>
-            </div>
-            <div class="section">
-                <h2>Prochaines étapes</h2>
-                <p>Voici un aperçu des prochaines étapes :</p>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <strong>1. Validation du wireframe</strong>
-                        <p>Une fois le wireframe validé, nous passerons à la phase de développement.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <strong>2. Développement</strong>
-                        <p>Le développement sera réalisé en plusieurs étapes, comme détaillé ci-dessous.</p>
-                    </div>
-                </div>
-                <p>Les étapes du développement sont les suivantes :</p>
-                <ul>
-                    <li>Codage de la structure HTML en utilisant les balises sémantiques pour un bon SEO technique</li>
-                    <li>Création de la couche CSS pour la mise en forme du HTML</li>
-                    <li>Conception et développement des fonctionnalités JavaScript</li>
-                    <li>Conception et développement des animations en JavaScript et CSS</li>
-                    <li>Réalisation de l'intégration technique (EmailJS, Leafjet, optimisations, sécurité)</li>
-                    <li>Vérification de l'approche mobile-first et ajustements nécessaires</li>
-                    <li>Tests de compatibilité sur les navigateurs et appareils cibles</li>
-                    <li>Réception du profil de client cible, recherche de mots-clés et création du contenu</li>
-                    <li>Tests de performance et d'optimisation</li>
-                    <li>Tests de sécurité</li>
-                    <li>Installation sur l'hébergeur</li>
-                    <li>Création des fichiers robots.txt, llms.txt et htaccess</li>
-                    <li>Création d'un sitemap.xml pour l'indexation Google</li>
-                    <li>Tests finaux et mise en ligne</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h2>Étapes optionnelles</h2>
-                <p>En fonction de votre budget et de vos besoins, nous pourrions envisager les étapes optionnelles suivantes :</p>
-                <ul>
-                    <li>Création d'une version multilingue du site (français, anglais, espagnol)</li>
-                    <li>Suivi post-lancement et ajustements si nécessaire</li>
-                    <li>Création d'un tableau de bord Google Analytics et Google Search Console</li>
-                    <li>Création des éléments pour le SEO local : page Google My Business et ciblage d'annuaire</li>
-                    <li>Intégration d'un blog pour le partage de contenu et le SEO</li>
-                    <li>Création de pages de destination spécifiques pour des campagnes marketing</li>
-                    <li>Intégration d'un système de chat en direct pour le support client</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h2>Remerciements</h2>
-                <p>Je reste à votre disposition pour toute question ou ajustement concernant ce wireframe. Je vous remercie de votre confiance et j'ai hâte de collaborer avec vous sur ce projet passionnant.</p>
-                <p>Julian Buzaré</p>
-                <p>Développeur Web, Spécialiste Automatisation n8n et Agents IA</p>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader">
+            <div class="water"></div>
+        </div>
+        <p class="loader-text">Lemblé & Co</p>
+    </div>
+
+    <!-- Wave Background SVG -->
+    <svg class="bg-waves" width="100%" height="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+        <path class="wave1" d="M0,128 C320,128 320,384 640,384 C960,384 960,128 1280,128 C1600,128 1600,384 1920,384 L1920,1080 L0,1080 Z"></path>
+        <path class="wave2" d="M0,384 C320,384 320,640 640,640 C960,640 960,384 1280,384 C1600,384 1600,640 1920,640 L1920,1080 L0,1080 Z"></path>
+        <path class="wave3" d="M0,640 C320,640 320,896 640,896 C960,896 960,640 1280,640 C1600,640 1600,896 1920,896 L1920,1080 L0,1080 Z"></path>
+    </svg>
+
+    <!-- Cookies Consent Banner -->
+    <div id="cookie-consent" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Nous utilisons des cookies pour améliorer votre expérience. En continuant à naviguer, vous acceptez notre utilisation des cookies.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn-cookie-accept">Accepter</button>
+                <button id="decline-cookies" class="btn-cookie-decline">Refuser</button>
             </div>
         </div>
     </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#accueil" class="logo-link">
+                    <span class="logo-icon"><span class="logo-dot"></span></span>
+                    <span class="logo-text">Lemblé & Co</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="Menu principal">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="accueil" class="hero">
+            <div class="hero-visual-full">
+                <div class="hero-image-container">
+                    <img src="./images/hero-section.jpg" alt="Bateau prenant le large et filant vers l'horizon" class="hero-image">
+                    <div class="hero-overlay"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Slogan 1ère partie,<br><span class="highlight">Slogan 2ème partie</span></h1>
+                        <p class="lead">Des solutions financières personnalisées pour assurer votre avenir et celui de vos proches.</p>
+                        <div class="hero-cta">
+                            <a href="#services" class="btn btn-primary">Découvrez mes services</a>
+                            <a href="#contact" class="btn btn-outline">Prenons rendez-vous</a>
+                        </div>
+                        <div class="hero-locations">
+                            <span>Bretagne</span>
+                            <span class="dot"></span>
+                            <span>Paris</span>
+                            <span class="dot"></span>
+                            <span>La Réunion</span>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number count-up" data-target="15">0</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number count-up" data-target="500">0</span>
+                            <span class="stat-label">Clients satisfaits</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number count-up" data-target="95">0</span>
+                            <span class="stat-label">Taux de fidélisation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-aos="fade-up">Ce que nous faisons</span>
+                    <h2 data-aos="fade-up" data-aos-delay="100">Mes Services</h2>
+                    <p data-aos="fade-up" data-aos-delay="200">Des solutions adaptées à vos objectifs patrimoniaux, conçues pour optimiser et pérenniser votre richesse.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-card-content">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <h3>Conseil en Investissement</h3>
+                            <p>Optimisation des placements financiers selon votre profil de risque et vos objectifs à court, moyen et long terme.</p>
+                            <a href="#contact" class="service-link">En savoir plus <span class="arrow">→</span></a>
+                        </div>
+                        <div class="service-hover">
+                            <div class="service-hover-content">
+                                <h3>Conseil en Investissement</h3>
+                                <ul>
+                                    <li>Analyse de votre profil d'investisseur</li>
+                                    <li>Diversification stratégique des actifs</li>
+                                    <li>Suivi personnalisé et réajustements périodiques</li>
+                                    <li>Reporting détaillé de performance</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-outline">Nous contacter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card-content">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <h3>Optimisation Fiscale & Patrimoniale</h3>
+                            <p>Stratégies d'optimisation fiscale légales et éthiques pour préserver et faire fructifier votre patrimoine.</p>
+                            <a href="#contact" class="service-link">En savoir plus <span class="arrow">→</span></a>
+                        </div>
+                        <div class="service-hover">
+                            <div class="service-hover-content">
+                                <h3>Optimisation Fiscale & Patrimoniale</h3>
+                                <ul>
+                                    <li>Stratégies de défiscalisation adaptées</li>
+                                    <li>Optimisation de l'impôt sur le revenu</li>
+                                    <li>Structuration fiscale du patrimoine immobilier</li>
+                                    <li>Veille sur les évolutions législatives</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-outline">Nous contacter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card-content">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 11 12 14 22 4"></polyline>
+                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                </svg>
+                            </div>
+                            <h3>Gestion de Patrimoine Sur Mesure</h3>
+                            <p>Conseils personnalisés pour la structuration et la transmission de votre patrimoine familial et professionnel.</p>
+                            <a href="#contact" class="service-link">En savoir plus <span class="arrow">→</span></a>
+                        </div>
+                        <div class="service-hover">
+                            <div class="service-hover-content">
+                                <h3>Gestion de Patrimoine Sur Mesure</h3>
+                                <ul>
+                                    <li>Bilan patrimonial complet</li>
+                                    <li>Stratégies de transmission optimisées</li>
+                                    <li>Protection de la famille et des proches</li>
+                                    <li>Solutions de démembrement pertinentes</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-outline">Nous contacter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card-content">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <h3>Acompagnement des Dirigeants</h3>
+                            <p>Analyse et recommandations d'opportunités d'investissement diversifiées pour maximiser vos rendements.</p>
+                            <a href="#contact" class="service-link">En savoir plus <span class="arrow">→</span></a>
+                        </div>
+                        <div class="service-hover">
+                            <div class="service-hover-content">
+                                <h3>Acompagnement des Dirigeants</h3>
+                                <ul>
+                                    <li>Sélection d'actifs premium</li>
+                                    <li>Analyse des marchés financiers</li>
+                                    <li>Opportunités en private equity</li>
+                                    <li>Investissements alternatifs</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-outline">Nous contacter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-aos="fade-up">Mon approche</span>
+                    <h2 data-aos="fade-up" data-aos-delay="100">À Propos</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-image-wrapper" data-aos="fade-right">
+                        <div class="about-image-container">
+                            <div class="about-bg-shape"></div>
+                            <div class="about-image">
+                                <img src="/api/placeholder/500/700" alt="Portrait de Gwenaëlle Lemblé, gestionnaire de patrimoine">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <h3>Gwenaëlle Lemblé</h3>
+                        <p class="about-subtitle">Experte en Gestion Patrimoniale et Financière - Présidente Fondatrice</p>
+                        
+                        <p class="about-intro">Après 13 ans d'expérience dans les métiers de l'expertise comptable en France Métropolitaine et à la Réunion, j'ai décidé de me spécialiser en gestion patrimoniale pour offrir un accompagnement complet et personnalisé à mes clients...</p>
+                        
+                        <p>Diplômée de la BBS et venant de l'expertise comptable, je m'appuie sur une analyse approfondie des marchés et une connaissance pointue de la fiscalité française pour élaborer des stratégies sur mesure.</p>
+                        
+                        <div class="certifications">
+                            <div class="certification">
+                                <img src="/api/placeholder/60/60" alt="Certification CFA">
+                                <span>CIF</span>
+                            </div>
+                            <div class="certification">
+                                <img src="/api/placeholder/60/60" alt="Certification AMF">
+                                <span>Certifié AMF</span>
+                            </div>
+                            <div class="certification">
+                                <img src="/api/placeholder/60/60" alt="Certification CGPC">
+                                <span>CGPC</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about-philosophy">
+                            <h4>Ma philosophie</h4>
+                            <div class="philosophy-grid">
+                                <div class="philosophy-item">
+                                    <div class="philosophy-number">01</div>
+                                    <h5>Transparence</h5>
+                                    <p>Une communication claire et honnête pour des décisions éclairées.</p>
+                                </div>
+                                <div class="philosophy-item">
+                                    <div class="philosophy-number">02</div>
+                                    <h5>Sur-mesure</h5>
+                                    <p>Des stratégies parfaitement adaptées à vos objectifs et contraintes.</p>
+                                </div>
+                                <div class="philosophy-item">
+                                    <div class="philosophy-number">03</div>
+                                    <h5>Excellence</h5>
+                                    <p>Un service irréprochable et une recherche constante de performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-section" data-aos="fade-up">
+                    <h3>Mes Emplacements</h3>
+                    <div class="locations-map">
+                        <div class="interactive-map-container">
+                            <div id="leaflet-map" style="height: 500px; border-radius: var(--border-radius-lg); overflow: hidden;"></div>
+                        </div>
+                        <div class="locations-info">
+                            <h4>Bureaux et rendez-vous</h4>
+                            <p>Nos bureaux sont situés à des emplacements stratégiques pour servir notre clientèle en France métropolitaine et dans les DOM-TOM.</p>
+                            <ul class="location-list">
+                                <li data-location="paris" class="location-item">
+                                    <div class="location-dot paris"></div>
+                                    <div class="location-details">
+                                        <h5>Paris</h5>
+                                        <p>13 rue du Faubourg Saint-Honoré<br>75008 Paris</p>
+                                    </div>
+                                </li>
+                                <li data-location="rennes" class="location-item">
+                                    <div class="location-dot bretagne"></div>
+                                    <div class="location-details">
+                                        <h5>Brest</h5>
+                                        <p>55 Quai de la Douane<br>29200 Brest</p>
+                                    </div>
+                                </li>
+                                <li data-location="reunion" class="location-item">
+                                    <div class="location-dot reunion"></div>
+                                    <div class="location-details">
+                                        <h5>Saint-Denis</h5>
+                                        <p>1 rue de Paris<br>97400 Saint-Denis, La Réunion</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-section" data-aos="fade-up">
+                    <h3>Témoignages</h3>
+                    <div class="testimonials-container">
+                        <div class="testimonials-slider">
+                            <div class="testimonial-container">
+                                <div class="testimonial active">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-quote">"</div>
+                                        <p>L'approche personnalisée de Gwenaëlle m'a permis de restructurer mon patrimoine et d'optimiser ma fiscalité. Je recommande vivement ses services.</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-image">
+                                                <img src="/api/placeholder/60/60" alt="Jean-Michel Dupont">
+                                            </div>
+                                            <div class="author-info">
+                                                <h5 class="author-name">Jean-Michel Dupont</h5>
+                                                <p class="author-title">Chef d'entreprise, Quimperlé</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-quote">"</div>
+                                        <p>Grâce aux conseils avisés de Lemblé & Co, j'ai pu préparer sereinement ma retraite tout en préservant mon capital. Une collaboration précieuse.</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-image">
+                                                <img src="/api/placeholder/60/60" alt="Sophie Laurent">
+                                            </div>
+                                            <div class="author-info">
+                                                <h5 class="author-name">Sophie Laurent</h5>
+                                                <p class="author-title">Médecin, Paris</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-quote">"</div>
+                                        <p>Un accompagnement sur mesure qui a transformé ma vision de l'investissement. Je me sens en confiance et mes objectifs patrimoniaux sont en bonne voie.</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-image">
+                                                <img src="/api/placeholder/60/60" alt="Thomas Rivière">
+                                            </div>
+                                            <div class="author-info">
+                                                <h5 class="author-name">Thomas Rivière</h5>
+                                                <p class="author-title">Ingénieur, Saint-Denis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-controls">
+                                <button class="prev-testimonial" aria-label="Témoignage précédent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <div class="testimonial-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                                <button class="next-testimonial" aria-label="Témoignage suivant">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-aos="fade-up">Vos interrogations</span>
+                    <h2 data-aos="fade-up" data-aos-delay="100">Questions Fréquentes</h2>
+                    <p data-aos="fade-up" data-aos-delay="200">Tout ce que vous devez savoir sur mes services et mon approche.</p>
+                </div>
+                
+                <div class="faq-layout">
+                    <div class="faq-image" data-aos="fade-right">
+                        <div class="faq-pattern"></div>
+                        <div class="faq-img-container">
+                            <img src="/api/placeholder/500/700" alt="Bureau de conseil en gestion de patrimoine">
+                        </div>
+                    </div>
+                    
+                    <div class="faq-content" data-aos="fade-left">
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Comment se déroule le premier rendez-vous ?</span>
+                                    <span class="faq-icon"></span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>La première consultation vous est offerte et ne vous engage pas. Il dure environ une heure et permet d'établir un diagnostic de votre situation patrimoniale et de vos objectifs. À l'issue de cet entretien, je vous propose une stratégie adaptée à votre profil.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Quel est le montant minimum d'investissement ?</span>
+                                    <span class="faq-icon"></span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Nous accompagnons des clients avec des patrimoines variés, généralement à partir de 10 000€ d'actifs à investir. Cependant, chaque situation est unique et nous étudions tous les dossiers avec la même attention.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Comment sont rémunérés vos services ?</span>
+                                    <span class="faq-icon"></span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Notre rémunération peut prendre différentes formes selon vos besoins : honoraires fixes, pourcentage des actifs gérés ou commissions sur les produits souscrits. La transparence est notre priorité, et tous les frais sont clairement détaillés avant tout engagement.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Quels types d'investissements proposez-vous ?</span>
+                                    <span class="faq-icon"></span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Nous proposons une gamme diversifiée d'investissements : marchés financiers (actions, obligations), immobilier (SCPI, OPC), private equity, produits structurés, assurance-vie, etc. La composition de votre portefeuille dépendra de votre profil de risque et de vos objectifs.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Comment assurez-vous la sécurité de mes investissements ?</span>
+                                    <span class="faq-icon"></span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>La sécurité est notre priorité absolue. Nous travaillons avec des établissements financiers de premier plan, soumis aux réglementations françaises et européennes. La diversification des actifs et une surveillance constante des marchés permettent également de limiter les risques.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="faq-more-btn" id="faqMoreBtn">Voir plus de questions <span class="arrow">→</span></a>
+                            
+                            <div class="faq-more-container">
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Quelle est la différence entre un conseiller en gestion de patrimoine et un banquier ?</span>
+                                        <span class="faq-icon"></span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Contrairement à un banquier qui représente les intérêts de son établissement et propose principalement les produits de sa banque, je suis une conseillère indépendante. Mon objectif est de défendre vos intérêts en vous proposant les solutions les plus adaptées à votre situation, sans contrainte de gamme de produits.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Quelles sont les étapes de l'optimisation fiscale ?</span>
+                                        <span class="faq-icon"></span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>L'optimisation fiscale se déroule en plusieurs phases : analyse de votre situation fiscale actuelle, identification des opportunités d'optimisation légales, mise en place d'une stratégie adaptée (PER, assurance-vie, SCPI fiscales, etc.), et suivi régulier pour ajuster la stratégie en fonction de l'évolution de la législation et de votre situation personnelle.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Comment préparer efficacement la transmission de mon patrimoine ?</span>
+                                        <span class="faq-icon"></span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>La transmission patrimoniale nécessite une anticipation et une planification rigoureuses. Nous analysons votre situation familiale et vos objectifs pour vous proposer les solutions adaptées : donations, pacte Dutreil, assurance-vie, démembrement de propriété, holding familiale, etc. L'objectif est d'optimiser la transmission tout en réduisant la charge fiscale.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Qu'est-ce que la diversification de portefeuille et pourquoi est-elle importante ?</span>
+                                        <span class="faq-icon"></span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>La diversification consiste à répartir vos investissements entre différentes classes d'actifs, secteurs et zones géographiques. Cette approche est fondamentale car elle permet de réduire le risque global de votre portefeuille. En effet, lorsqu'un secteur ou un marché est en difficulté, d'autres peuvent performer, limitant ainsi les pertes potentielles et stabilisant les rendements sur le long terme.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>Comment intégrez-vous les critères ESG dans vos recommandations d'investissement ?</span>
+                                        <span class="faq-icon"></span>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Nous accordons une importance croissante aux critères Environnementaux, Sociaux et de Gouvernance (ESG) dans notre sélection d'investissements. Nous analysons la performance ESG des entreprises et des fonds que nous recommandons, et proposons une gamme de produits financiers responsables. Cette approche permet d'allier performance financière et impact positif, conformément aux valeurs de nombreux investisseurs modernes.</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="faq-less-btn" id="faqLessBtn">Voir moins <span class="arrow">↑</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-aos="fade-up">Mon offre</span>
+                    <h2 data-aos="fade-up" data-aos-delay="100">Mes Formules</h2>
+                    <p data-aos="fade-up" data-aos-delay="200">Des solutions adaptées à chaque besoin et à chaque niveau de patrimoine.</p>
+                </div>
+                
+                <div class="pricing-calculator" data-aos="fade-up">
+                    <div class="calculator-header">
+                        <h3>Calculatrice d'investissement</h3>
+                        <p>Estimez le potentiel de croissance de votre capital</p>
+                    </div>
+                    
+                    <div class="calculator-container">
+                        <div class="calculator-form">
+                            <div class="form-group">
+                                <label for="initial-investment">Investissement initial (€)</label>
+                                <div class="input-container">
+                                    <input type="number" id="initial-investment" min="1000" step="1000" value="50000">
+                                    <span class="input-suffix">€</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="annual-contribution">Versement annuel (€)</label>
+                                <div class="input-container">
+                                    <input type="number" id="annual-contribution" min="0" step="500" value="5000">
+                                    <span class="input-suffix">€</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="investment-period">Durée (années)</label>
+                                <div class="input-container">
+                                    <input type="number" id="investment-period" min="1" max="50" value="10">
+                                    <span class="input-suffix">ans</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="expected-return">Rendement annuel estimé (%)</label>
+                                <div class="input-container">
+                                    <input type="number" id="expected-return" min="1" max="15" step="0.5" value="5">
+                                    <span class="input-suffix">%</span>
+                                </div>
+                            </div>
+                            <button id="calculate-btn" class="btn btn-primary">Calculer</button>
+                        </div>
+                        
+                        <div class="calculator-result">
+                            <div class="result-chart">
+                                <div class="chart-placeholder">
+                                    <div class="chart-bars">
+                                        <div class="chart-bar">
+                                            <div class="chart-bar-fill initial"></div>
+                                            <div class="chart-bar-fill contribution"></div>
+                                            <div class="chart-bar-fill interest"></div>
+                                        </div>
+                                    </div>
+                                    <div class="chart-labels">
+                                        <div class="chart-label">Initial</div>
+                                        <div class="chart-label">Versements</div>
+                                        <div class="chart-label">Intérêts</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-details">
+                                <div class="result-card">
+                                    <h4>Capital final estimé</h4>
+                                    <p id="final-capital">0 €</p>
+                                </div>
+                                <div class="result-card">
+                                    <h4>Intérêts générés</h4>
+                                    <p id="generated-interest">0 €</p>
+                                </div>
+                                <div class="result-card">
+                                    <h4>Total versé</h4>
+                                    <p id="total-contributions">0 €</p>
+                                </div>
+                                <div class="result-notice">
+                                    <p>Cette simulation est fournie à titre indicatif et ne constitue pas un engagement contractuel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-plans" data-aos="fade-up">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <div class="pricing-title">
+                                <h3>Essentiel</h3>
+                                <p class="pricing-description">Pour commencer votre optimisation patrimoniale</p>
+                            </div>
+                            <div class="pricing-cost">
+                                <p class="price">À partir de <span>0,8%</span></p>
+                                <p class="price-suffix">des actifs gérés</p>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Bilan patrimonial complet</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Stratégie d'investissement personnalisée</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Suivi annuel de portefeuille</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Accès à notre plateforme en ligne</span>
+                                </li>
+                                <li class="feature-not-included">
+                                    <span class="feature-icon">×</span>
+                                    <span class="feature-text">Optimisation fiscale avancée</span>
+                                </li>
+                                <li class="feature-not-included">
+                                    <span class="feature-icon">×</span>
+                                    <span class="feature-text">Planification successorale</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="#contact" class="btn btn-outline">Nous contacter</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card recommended">
+                        <div class="pricing-tag">Recommandé</div>
+                        <div class="pricing-header">
+                            <div class="pricing-title">
+                                <h3>Premium</h3>
+                                <p class="pricing-description">Pour une stratégie patrimoniale optimisée</p>
+                            </div>
+                            <div class="pricing-cost">
+                                <p class="price">À partir de <span>1,2%</span></p>
+                                <p class="price-suffix">des actifs gérés</p>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Bilan patrimonial complet</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Stratégie d'investissement personnalisée</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Suivi trimestriel de portefeuille</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Accès à notre plateforme en ligne</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Optimisation fiscale avancée</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Planification successorale basique</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="#contact" class="btn btn-primary">Nous contacter</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <div class="pricing-title">
+                                <h3>Excellence</h3>
+                                <p class="pricing-description">Pour un accompagnement patrimonial complet</p>
+                            </div>
+                            <div class="pricing-cost">
+                                <p class="price">À partir de <span>1,5%</span></p>
+                                <p class="price-suffix">des actifs gérés</p>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Bilan patrimonial complet</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Stratégie d'investissement sur mesure</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Suivi mensuel de portefeuille</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Accès prioritaire à notre plateforme</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Optimisation fiscale avancée</span>
+                                </li>
+                                <li class="feature-included">
+                                    <span class="feature-icon">✓</span>
+                                    <span class="feature-text">Planification successorale complète</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="#contact" class="btn btn-outline">Me contacter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle" data-aos="fade-up">Parlons de vos projets</span>
+                    <h2 data-aos="fade-up" data-aos-delay="100">Contact</h2>
+                    <p data-aos="fade-up" data-aos-delay="200">Prenons rendez-vous pour échanger sur vos objectifs patrimoniaux.</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-card">
+                            <div class="contact-details">
+                                <h3>Coordonnées</h3>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Téléphone</h4>
+                                        <p>+33 (0)2 98 XXX XXX</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p>contact@lemble-and-co.com</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Bureaux</h4>
+                                        <p>Brest, Paris, Saint-Denis (La Réunion)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="office-hours">
+                                <h4>Horaires</h4>
+                                <div class="hours-grid">
+                                    <div class="hours-day">Lundi - Vendredi</div>
+                                    <div class="hours-time">9h00 - 18h00</div>
+                                    <div class="hours-day">Samedi</div>
+                                    <div class="hours-time">Sur rendez-vous</div>
+                                </div>
+                                <p class="hours-note">Rendez-vous possibles en dehors de ces horaires</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container" data-aos="fade-left">
+                        <div class="contact-form-wrapper">
+                            <form id="contactForm" method="POST" action="#">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="name">Nom complet*</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email*</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Téléphone*</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Sujet</label>
+                                        <select id="subject" name="subject">
+                                            <option value="general">Demande générale</option>
+                                            <option value="investment">Conseils en investissement</option>
+                                            <option value="tax">Optimisation fiscale</option>
+                                            <option value="estate">Planification successorale</option>
+                                            <option value="other">Autre</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group full-width">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" rows="5"></textarea>
+                                    </div>
+                                    <!-- Honeypot field -->
+                                    <div class="form-group hidden-field">
+                                        <label for="website">Website</label>
+                                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                                    </div>
+                                    <div class="form-group full-width">
+                                        <div class="privacy-checkbox">
+                                            <input type="checkbox" id="privacy" name="privacy" required>
+                                            <label for="privacy">J'accepte que mes données soient traitées conformément à la <a href="#" class="privacy-link">politique de confidentialité</a>*</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-submit full-width">
+                                        <button type="submit" class="btn btn-primary">Envoyer votre message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="formSuccess" class="form-success">
+                                <div class="success-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                                <h3>Message envoyé !</h3>
+                                <p>Nous vous contacterons dans les plus brefs délais.</p>
+                                <button class="btn btn-outline success-close">Fermer</button>
+                            </div>
+                            <div id="formError" class="form-error">
+                                <div class="error-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                    </svg>
+                                </div>
+                                <h3>Une erreur est survenue</h3>
+                                <p>Veuillez réessayer ultérieurement ou nous contacter par téléphone.</p>
+                                <button class="btn btn-outline error-close">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Appointment Button -->
+    <a href="#contact" class="appointment-btn" aria-label="Prendre rendez-vous">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <span>Prenez Rendez-Vous</span>
+    </a>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#accueil" class="footer-logo">
+                        <span class="logo-text">Lemble & Co</span>
+                    </a>
+                    <p>Solutions personnalisées de gestion de patrimoine sur mesure pour sécuriser votre avenir financier.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Conseil en investissement</a></li>
+                            <li><a href="#services">Optimisation Fiscale et Patrimoniale</a></li>
+                            <li><a href="#services">Gestion de Patrimoine Sur Mesure</a></li>
+                            <li><a href="#services">Accompagnement des dirigeants</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Légal</h4>
+                        <ul>
+                            <li><a href="./politique-confidentialite.html">Politique de Confidentialité</a></li>
+                            <li><a href="./mentions-legales.html">Mentions Légales</a></li>
+                            <li><a href="./c-g-u.html">C.G.U.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lemble & Co. Tous droits réservés.</p>
+                <p class="legal-info">SASU au capital de 50 000€ - RCS Paris I 123 456 789 - ORIAS n°12345678</p>
+                <p class="legal-info">Site conçu et développé par <a href="https://www.julian-buzare.com" class="website-dev">julian-buzare.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/app-definitif.js" defer></script>
+    <script src="./js/hero-section.js" defer></script>
+    <script src="./js/location-map.js" defer></script>
 </body>
 </html>
