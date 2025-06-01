@@ -41,7 +41,6 @@ function initializeApp() {
         initHeroSection(),
         initFAQ(),
         initTestimonials(),
-        initCalculator(),
         initContactForm(),
         initScrollAnimation(),
         initBackToTop(),
@@ -333,104 +332,6 @@ function initTestimonials() {
     }
 }
 
-// Calculatrice d'investissement
-function initCalculator() {
-    const calculateBtn = document.getElementById('calculate-btn');
-    if (!calculateBtn) return;
-    
-    // Calcul initial
-    calculateInvestment();
-    
-    calculateBtn.addEventListener('click', calculateInvestment);
-    
-    // Validation des entrées
-    const inputs = getAllElements('.calculator-form input');
-    inputs.forEach(input => {
-        input.addEventListener('input', validateInput);
-    });
-    
-    function validateInput(e) {
-        const input = e.target;
-        const min = parseFloat(input.getAttribute('min')) || 0;
-        const max = parseFloat(input.getAttribute('max')) || Infinity;
-        let value = parseFloat(input.value) || 0;
-        
-        if (value < min) value = min;
-        if (value > max) value = max;
-        
-        input.value = value;
-    }
-}
-
-function calculateInvestment() {
-    const initialInvestment = parseFloat(document.getElementById('initial-investment')?.value) || 0;
-    const annualContribution = parseFloat(document.getElementById('annual-contribution')?.value) || 0;
-    const investmentPeriod = parseInt(document.getElementById('investment-period')?.value) || 0;
-    const expectedReturn = parseFloat(document.getElementById('expected-return')?.value) || 0;
-    
-    // Calcul du capital final (formule des intérêts composés)
-    let finalCapital = initialInvestment;
-    const rate = expectedReturn / 100;
-    
-    for (let i = 0; i < investmentPeriod; i++) {
-        finalCapital = finalCapital * (1 + rate) + annualContribution;
-    }
-    
-    const totalContributions = initialInvestment + (annualContribution * investmentPeriod);
-    const generatedInterest = finalCapital - totalContributions;
-    
-    // Mise à jour de l'affichage
-    updateChart(initialInvestment, totalContributions - initialInvestment, generatedInterest, finalCapital);
-    
-    const elements = {
-        'final-capital': finalCapital,
-        'generated-interest': generatedInterest,
-        'total-contributions': totalContributions
-    };
-    
-    Object.entries(elements).forEach(([id, value]) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.textContent = formatCurrency(value);
-        }
-    });
-    
-    animateResults();
-}
-
-function updateChart(initial, contributions, interest, total) {
-    const bars = {
-        '.chart-bar-fill.initial': (initial / total) * 100,
-        '.chart-bar-fill.contribution': (contributions / total) * 100,
-        '.chart-bar-fill.interest': (interest / total) * 100
-    };
-    
-    Object.entries(bars).forEach(([selector, percentage]) => {
-        const element = getElement(selector);
-        if (element) {
-            element.style.height = `${percentage}%`;
-        }
-    });
-}
-
-function animateResults() {
-    const resultCards = getAllElements('.result-card');
-    
-    resultCards.forEach(card => {
-        card.classList.add('highlight');
-        setTimeout(() => card.classList.remove('highlight'), 1000);
-    });
-}
-
-function formatCurrency(amount) {
-    return new Intl.NumberFormat('fr-FR', { 
-        style: 'currency', 
-        currency: 'EUR',
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0
-    }).format(amount);
-}
-
 // Formulaire de contact avec validation et sécurité
 function initContactForm() {
     const contactForm = document.getElementById('contactForm');
@@ -712,6 +613,5 @@ if (typeof module !== 'undefined' && module.exports) {
         initializeApp,
         validateForm,
         sanitizeInput,
-        formatCurrency
     };
 }
