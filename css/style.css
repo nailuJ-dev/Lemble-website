@@ -797,8 +797,8 @@ input:focus, textarea:focus, select:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 1.5rem;
     background-color: var(--light-accent);
     color: var(--primary-color);
@@ -863,7 +863,6 @@ input:focus, textarea:focus, select:focus {
 }
 
 .service-hover-content .btn {
-    margin-top: 1.5rem;
     align-self: flex-start;
 }
 
