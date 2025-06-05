@@ -1425,6 +1425,16 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* ---------- Contact Section ---------- */
+.section-subtitle-arg {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
 .contact {
     padding: var(--section-padding);
     background-color: var(--light-bg);
