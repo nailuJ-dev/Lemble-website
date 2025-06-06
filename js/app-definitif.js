@@ -436,8 +436,8 @@ function validateForm(form) {
         },
         phone: {
             element: form.querySelector('#phone'),
-            validate: value => /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/.test(value.trim()),
-            message: 'Veuillez saisir un numéro de téléphone français valide'
+            validate: value => /^(?<international>(\+|00)(?<countryCode>[1-9]\d{0,3})[\s.-]?)?(?<number>(?<areaCode>\(?[0-9]{1,4}\)?[\s.-]?)?[0-9](?:[\s.-]?[0-9]){6,14})$/.test(value.trim()),
+            message: 'Veuillez saisir un numéro de téléphone valide'
         }
     };
     
