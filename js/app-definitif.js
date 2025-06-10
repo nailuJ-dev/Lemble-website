@@ -128,8 +128,6 @@ function initNavigation() {
         
         // Back to top visibility
         toggleBackToTopButton();
-        
-        // Scroll indicator
     }
     
     function handleNavClick(e) {
@@ -515,7 +513,7 @@ function initScrollAnimation() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('aos-animate');
-                observer.unobserve(entry.target); // Une fois animé, ne plus observer
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
