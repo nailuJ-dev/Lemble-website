@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+        
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://www.lemble-and-co.com/</loc>
+        <lastmod>2025-01-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://www.lemble-and-co.com/images/hero-section.jpg</image:loc>
+            <image:caption>Gestion de patrimoine et conseil financier - Horizon Patrimoine</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Section Services -->
+    <url>
+        <loc>https://www.lemble-and-co.com/#services</loc>
+        <lastmod>2025-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Section À Propos -->
+    <url>
+        <loc>https://www.lemble-and-co.com/#about</loc>
+        <lastmod>2025-01-06</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.lemble-and-co.com/images/gwenaelle-lemble-portrait.jpg</image:loc>
+            <image:caption>Gwenaëlle Lemblé - Experte en Gestion Patrimoniale</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Section FAQ -->
+    <url>
+        <loc>https://www.lemble-and-co.com/#faq</loc>
+        <lastmod>2025-01-06</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Section Contact -->
+    <url>
+        <loc>https://www.lemble-and-co.com/#contact</loc>
+        <lastmod>2025-01-06</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

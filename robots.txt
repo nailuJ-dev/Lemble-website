@@ -1,0 +1,80 @@
+# robots.txt pour Lemblé & Co
+# Gestion de patrimoine et conseil financier
+
+User-agent: *
+
+# Pages autorisées pour l'indexation
+Allow: /
+Allow: /services
+Allow: /about
+Allow: /faq
+Allow: /contact
+
+# Pages interdites aux moteurs de recherche
+Disallow: /pages-legales/
+Disallow: /mentions-legales
+Disallow: /politique-confidentialite
+Disallow: /c-g-u
+Disallow: /admin/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /assets/temp/
+Disallow: /backup/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.zip$
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/uploads/private/
+
+# Fichiers sensibles
+Disallow: /config.js
+Disallow: /config.php
+Disallow: /.htaccess
+Disallow: /.env
+Disallow: /composer.json
+Disallow: /package.json
+
+# Moteurs de recherche spécialisés
+User-agent: GPTBot
+Disallow: /mentions-legales
+Disallow: /politique-confidentialite
+Disallow: /c-g-u
+Disallow: /pages-legales/
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Disallow: /mentions-legales
+Disallow: /politique-confidentialite
+Disallow: /c-g-u
+Disallow: /pages-legales/
+Disallow: /admin/
+
+User-agent: CCBot
+Disallow: /mentions-legales
+Disallow: /politique-confidentialite
+Disallow: /c-g-u
+Disallow: /pages-legales/
+Disallow: /admin/
+
+User-agent: anthropic-ai
+Disallow: /mentions-legales
+Disallow: /politique-confidentialite
+Disallow: /c-g-u
+Disallow: /pages-legales/
+Disallow: /admin/
+
+User-agent: Claude-Web
+Disallow: /mentions-legales
+Disallow: /politique-confidentialite
+Disallow: /c-g-u
+Disallow: /pages-legales/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://www.lemble-and-co.com/sitemap.xml
+
+# Délai entre les requêtes (en secondes)
+Crawl-delay: 1
