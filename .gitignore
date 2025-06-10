@@ -25,6 +25,7 @@ yarn-error.log*
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+.htaccess
 
 # Dossiers et fichiers d'éditeurs de code
 .idea/
